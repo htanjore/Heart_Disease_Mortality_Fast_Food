@@ -1,0 +1,251 @@
+State_name,State,Year,Male,Female,Total
+Alabama,AL,2013,10.6,7,8.8
+Alaska,AK,2013,6.3,3.4,4.85
+Arizona,AZ,2013,8.3,5.4,6.85
+Arkansas,AR,2013,8.8,7.4,8.1
+California,CA,2013,6.4,3.6,5
+Colorado,CO,2013,5.4,3.3,4.35
+Connecticut,CT,2013,7.4,4.7,6.05
+Delaware,DE,2013,7.8,5.9,6.85
+Florida,FL,2013,9.8,6.2,8
+Georgia,GA,2013,6.5,5.1,5.8
+Hawaii,HI,2013,6.6,2.8,4.7
+Idaho,ID,2013,7.1,4.1,5.6
+Illinois,IL,2013,7.1,5.2,6.15
+Indiana,IN,2013,8.9,5.7,7.3
+Iowa,IA,2013,8.7,5.1,6.9
+Kansas,KS,2013,8,5,6.5
+Kentucky,KY,2013,10.8,7.4,9.1
+Louisiana,LA,2013,9.2,6.9,8.05
+Maine,ME,2013,9.8,5.4,7.6
+Maryland,MD,2013,7.1,4.5,5.8
+Massachusetts,MA,2013,6.7,4.3,5.5
+Michigan,MI,2013,10.1,5.7,7.9
+Minnesota,MN,2013,5.7,3.7,4.7
+Mississippi,MS,2013,8.5,6.9,7.7
+Missouri,MO,2013,9.9,5.7,7.8
+Montana,MT,2013,7.5,4.8,6.15
+Nebraska,NE,2013,7.6,4.7,6.15
+Nevada,NV,2013,7.3,5.5,6.4
+New Hampshire,NH,2013,7.8,4.3,6.05
+New Jersey,NJ,2013,7.4,5.1,6.25
+New Mexico,NM,2013,6.7,4.4,5.55
+New York,NY,2013,8.4,5.7,7.05
+North Carolina,NC,2013,8.2,5.9,7.05
+North Dakota,ND,2013,7.6,4.7,6.15
+Ohio,OH,2013,9.1,5.7,7.4
+Oklahoma,OK,2013,9.4,6.3,7.85
+Oregon,OR,2013,8.4,4.7,6.55
+Pennsylvania,PA,2013,9,5.8,7.4
+Rhode Island,RI,2013,8.9,4.8,6.85
+South Carolina,SC,2013,9.2,5.6,7.4
+South Dakota,SD,2013,8.9,5.9,7.4
+Tennessee,TN,2013,12.4,8.1,10.25
+Texas,TX,2013,6.5,4.8,5.65
+Utah,UT,2013,5.8,3.1,4.45
+Vermont,VT,2013,7.9,4.4,6.15
+Virginia,VA,2013,6.3,5.6,5.95
+Washington,WA,2013,7.4,4.3,5.85
+West Virginia,WV,2013,13.9,9,11.45
+Wisconsin,WI,2013,8.1,5.2,6.65
+Wyoming,WY,2013,7.8,5,6.4
+Alabama,AL,2014,10.7,7.1,8.9
+Alaska,AK,2014,5.4,3.2,4.3
+Arizona,AZ,2014,7.4,5.3,6.35
+Arkansas,AR,2014,11.8,7.6,9.7
+California,CA,2014,6.2,4.7,5.45
+Colorado,CO,2014,5.9,3.5,4.7
+Connecticut,CT,2014,7.1,4.7,5.9
+Delaware,DE,2014,9.8,4.8,7.3
+Florida,FL,2014,9.7,6.6,8.15
+Georgia,GA,2014,7.5,5.8,6.65
+Hawaii,HI,2014,6.3,3.7,5
+Idaho,ID,2014,6.6,4.1,5.35
+Illinois,IL,2014,6.7,5,5.85
+Indiana,IN,2014,9.3,5.2,7.25
+Iowa,IA,2014,8.5,4.6,6.55
+Kansas,KS,2014,7.7,4.8,6.25
+Kentucky,KY,2014,11.7,8,9.85
+Louisiana,LA,2014,9.8,8.3,9.05
+Maine,ME,2014,10.2,5.6,7.9
+Maryland,MD,2014,6.3,3.7,5
+Massachusetts,MA,2014,8.4,4.7,6.55
+Michigan,MI,2014,9.2,6.5,7.85
+Minnesota,MN,2014,7.5,3.6,5.55
+Mississippi,MS,2014,8.6,6.7,7.65
+Missouri,MO,2014,9.4,6.3,7.85
+Montana,MT,2014,7.3,4.4,5.85
+Nebraska,NE,2014,7.3,4.5,5.9
+Nevada,NV,2014,8.8,5.8,7.3
+New Hampshire,NH,2014,8,4.2,6.1
+New Jersey,NJ,2014,8.2,5.2,6.7
+New Mexico,NM,2014,7.8,4.8,6.3
+New York,NY,2014,7.3,4.5,5.9
+North Carolina,NC,2014,8.8,6.7,7.75
+North Dakota,ND,2014,8,4.7,6.35
+Ohio,OH,2014,9.4,6.3,7.85
+Oklahoma,OK,2014,10,6.7,8.35
+Oregon,OR,2014,7.1,5.6,6.35
+Pennsylvania,PA,2014,9.1,5.8,7.45
+Rhode Island,RI,2014,8.4,4.6,6.5
+South Carolina,SC,2014,9.3,5.3,7.3
+South Dakota,SD,2014,9.2,5.4,7.3
+Tennessee,TN,2014,10.6,7.1,8.85
+Texas,TX,2014,6.8,4.8,5.8
+Utah,UT,2014,5.5,2.9,4.2
+Vermont,VT,2014,7.1,4.8,5.95
+Virginia,VA,2014,7.4,5.2,6.3
+Washington,WA,2014,6.8,4.5,5.65
+West Virginia,WV,2014,12.5,10,11.25
+Wisconsin,WI,2014,7.3,4.1,5.7
+Wyoming,WY,2014,7.9,4.8,6.35
+Alabama,AL,2015,9,7.3,8.15
+Alaska,AK,2015,5.1,3.8,4.45
+Arizona,AZ,2015,7.6,4.8,6.2
+Arkansas,AR,2015,9.2,7.9,8.55
+California,CA,2015,5.4,4.3,4.85
+Colorado,CO,2015,5.8,3.2,4.5
+Connecticut,CT,2015,7.3,3.9,5.6
+Delaware,DE,2015,7.9,6.3,7.1
+Florida,FL,2015,8.9,6,7.45
+Georgia,GA,2015,7.9,5.5,6.7
+Hawaii,HI,2015,5.6,3.3,4.45
+Idaho,ID,2015,7.1,4.2,5.65
+Illinois,IL,2015,8.1,4.1,6.1
+Indiana,IN,2015,10.7,5.1,7.9
+Iowa,IA,2015,7.7,4.4,6.05
+Kansas,KS,2015,7.2,4.6,5.9
+Kentucky,KY,2015,12.5,6.4,9.45
+Louisiana,LA,2015,9.6,6.6,8.1
+Maine,ME,2015,10.1,5.8,7.95
+Maryland,MD,2015,7,4.6,5.8
+Massachusetts,MA,2015,7.7,4.4,6.05
+Michigan,MI,2015,8.8,5.7,7.25
+Minnesota,MN,2015,6.4,4,5.2
+Mississippi,MS,2015,9.6,7.3,8.45
+Missouri,MO,2015,8.9,6.2,7.55
+Montana,MT,2015,6.6,4.5,5.55
+Nebraska,NE,2015,7.4,4.3,5.85
+Nevada,NV,2015,6.3,6,6.15
+New Hampshire,NH,2015,7.5,3.8,5.65
+New Jersey,NJ,2015,7,4.3,5.65
+New Mexico,NM,2015,6.3,5.2,5.75
+New York,NY,2015,7.3,4.4,5.85
+North Carolina,NC,2015,8.6,5.5,7.05
+North Dakota,ND,2015,6.7,4.5,5.6
+Ohio,OH,2015,8.6,5.4,7
+Oklahoma,OK,2015,10.2,6.7,8.45
+Oregon,OR,2015,7,4.1,5.55
+Pennsylvania,PA,2015,8.7,5.5,7.1
+Rhode Island,RI,2015,7.9,4.2,6.05
+South Carolina,SC,2015,8.6,5.3,6.95
+South Dakota,SD,2015,7.9,6.2,7.05
+Tennessee,TN,2015,9.8,7.1,8.45
+Texas,TX,2015,7.5,4.7,6.1
+Utah,UT,2015,5,2.9,3.95
+Vermont,VT,2015,8.3,4.7,6.5
+Virginia,VA,2015,6.5,4.4,5.45
+Washington,WA,2015,7.1,4.3,5.7
+West Virginia,WV,2015,13.3,8.8,11.05
+Wisconsin,WI,2015,7.8,4.6,6.2
+Wyoming,WY,2015,7.7,4.4,6.05
+Alabama,AL,2016,11,7,9
+Alaska,AK,2016,4.9,4,4.45
+Arizona,AZ,2016,8.5,5.1,6.8
+Arkansas,AR,2016,10.7,9.3,10
+California,CA,2016,5.7,3.9,4.8
+Colorado,CO,2016,6.1,3.7,4.9
+Connecticut,CT,2016,7.3,4.2,5.75
+Delaware,DE,2016,8.1,6,7.05
+Florida,FL,2016,9.5,5.7,7.6
+Georgia,GA,2016,7.8,5.9,6.85
+Hawaii,HI,2016,6.9,4.3,5.6
+Idaho,ID,2016,7.1,5.4,6.25
+Illinois,IL,2016,7.1,4.9,6
+Indiana,IN,2016,9,6.1,7.55
+Iowa,IA,2016,8,4.6,6.3
+Kansas,KS,2016,8.1,4.7,6.4
+Kentucky,KY,2016,12.4,9,10.7
+Louisiana,LA,2016,9.6,6.7,8.15
+Maine,ME,2016,10.8,5.4,8.1
+Maryland,MD,2016,7.2,4.5,5.85
+Massachusetts,MA,2016,7.6,5.1,6.35
+Michigan,MI,2016,9.6,5.7,7.65
+Minnesota,MN,2016,7,3.9,5.45
+Mississippi,MS,2016,9.9,8.1,9
+Missouri,MO,2016,9.1,6.7,7.9
+Montana,MT,2016,8.1,4.2,6.15
+Nebraska,NE,2016,7,4.9,5.95
+Nevada,NV,2016,8.6,5.2,6.9
+New Hampshire,NH,2016,8.8,3.8,6.3
+New Jersey,NJ,2016,8.1,4.6,6.35
+New Mexico,NM,2016,8.4,5.7,7.05
+New York,NY,2016,6.9,5.3,6.1
+North Carolina,NC,2016,8.4,5.9,7.15
+North Dakota,ND,2016,7.9,4.9,6.4
+Ohio,OH,2016,9.2,5.6,7.4
+Oklahoma,OK,2016,9.6,6,7.8
+Oregon,OR,2016,8.2,5.1,6.65
+Pennsylvania,PA,2016,9.2,5.4,7.3
+Rhode Island,RI,2016,8.1,4.3,6.2
+South Carolina,SC,2016,8.7,6,7.35
+South Dakota,SD,2016,9.8,4.8,7.3
+Tennessee,TN,2016,9.9,7,8.45
+Texas,TX,2016,7,4.8,5.9
+Utah,UT,2016,5.2,2.6,3.9
+Vermont,VT,2016,7.7,4.5,6.1
+Virginia,VA,2016,7.2,5.3,6.25
+Washington,WA,2016,7.1,4.5,5.8
+West Virginia,WV,2016,14.1,9.6,11.85
+Wisconsin,WI,2016,8.7,4.7,6.7
+Wyoming,WY,2016,7.3,4.9,6.1
+Alabama,AL,2017,10.4,7.1,8.75
+Alaska,AK,2017,6,3.3,4.65
+Arizona,AZ,2017,7.2,4.7,5.95
+Arkansas,AR,2017,11.9,6.8,9.35
+California,CA,2017,5.9,3.6,4.75
+Colorado,CO,2017,5.8,2.9,4.35
+Connecticut,CT,2017,7.4,4.4,5.9
+Delaware,DE,2017,7.2,5.6,6.4
+Florida,FL,2017,8.8,6,7.4
+Georgia,GA,2017,7.1,4.9,6
+Hawaii,HI,2017,5.8,3,4.4
+Idaho,ID,2017,6.5,4.6,5.55
+Illinois,IL,2017,7.7,4.5,6.1
+Indiana,IN,2017,9.2,5.6,7.4
+Iowa,IA,2017,7.5,5,6.25
+Kansas,KS,2017,7.3,5,6.15
+Kentucky,KY,2017,12.6,7.3,9.95
+Louisiana,LA,2017,9,6.6,7.8
+Maine,ME,2017,10.7,4.9,7.8
+Maryland,MD,2017,7,3.9,5.45
+Massachusetts,MA,2017,6.9,4.4,5.65
+Michigan,MI,2017,9.8,6.3,8.05
+Minnesota,MN,2017,6.7,3.7,5.2
+Mississippi,MS,2017,9.6,7,8.3
+Missouri,MO,2017,9.2,6.1,7.65
+Montana,MT,2017,7.3,4.3,5.8
+Nebraska,NE,2017,7.7,4.8,6.25
+Nevada,NV,2017,8.3,5.3,6.8
+New Hampshire,NH,2017,7.5,3.7,5.6
+New Jersey,NJ,2017,6.9,4.9,5.9
+New Mexico,NM,2017,6.5,4.9,5.7
+New York,NY,2017,7.1,4.7,5.9
+North Carolina,NC,2017,7.9,5.3,6.6
+North Dakota,ND,2017,7,5.1,6.05
+Ohio,OH,2017,9.3,6,7.65
+Oklahoma,OK,2017,9.8,6.6,8.2
+Oregon,OR,2017,6.8,4.4,5.6
+Pennsylvania,PA,2017,8.9,6.1,7.5
+Rhode Island,RI,2017,7.6,4.6,6.1
+South Carolina,SC,2017,8.9,6,7.45
+South Dakota,SD,2017,9.3,5.7,7.5
+Tennessee,TN,2017,10.1,6.9,8.5
+Texas,TX,2017,6.5,4.6,5.55
+Utah,UT,2017,5.6,3.1,4.35
+Vermont,VT,2017,8.8,4.5,6.65
+Virginia,VA,2017,8,5.2,6.6
+Washington,WA,2017,6.6,4.5,5.55
+West Virginia,WV,2017,12.9,10.1,11.5
+Wisconsin,WI,2017,6.2,4.7,5.45
+Wyoming,WY,2017,7.5,4.6,6.05
