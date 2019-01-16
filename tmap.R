@@ -81,7 +81,7 @@ library(sf)
 # FFR_shape_merge <- append_data(FFR_shape, FFR, key.shp = "GEOID", key.data = "GEOID",ignore.na = TRUE)
 # FFR_shape_merge <- FFR_shape_merge[!(FFR_shape_merge$State %in% c("AK", 'HI',"DC", "PR")),]
 # saveRDS(FFR_shape_merge, file = "FFR_shape_merge.RDS")
-FFR_shape_merge <- readRDS(file = './data/FFR_shape_merge.RDS')
+FFR_shape_merge <- readRDS(file = './Heart_Disease_Mortality_Fast_Food/data/FFR_shape_merge.RDS')
 shpsimp <- simplify_shape(FFR_shape_merge, fact = 0.05)
 US_states <-FFR_shape_merge %>% aggregate_map(by = "State")
 

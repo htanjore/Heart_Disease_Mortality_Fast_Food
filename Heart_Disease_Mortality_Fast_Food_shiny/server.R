@@ -52,12 +52,12 @@ server <- function(input, output) {
   
   output$FFR_TN = renderLeaflet({
     
-    data <- FFR_shape_merge %>% 
-      filter(State_name == input$state)
+    map_data <- FFR_shape_merge %>% 
+      dplyr::filter(State_name == input$state)
     
     var1 <- "Age_Adjusted_Rate"
     cuts1 <- c(100,120,180,200,300,350,400,450)
-    tm1 <- tm_shape(data, projection = 2163) +
+    tm1 <- tm_shape(map_data, projection = 2163) +
       tm_fill(var1,
               breaks = cuts1,
               palette = "BuPu",
