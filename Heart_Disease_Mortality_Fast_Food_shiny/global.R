@@ -17,7 +17,6 @@ library(tmap)
 library(raster)
 library(tmaptools)
 library(leaflet)
-#library(readxl)
 library(sf)
 
 # FFR <- readRDS(file = './Midstone_Project/Midstone/FFR.RDS')
