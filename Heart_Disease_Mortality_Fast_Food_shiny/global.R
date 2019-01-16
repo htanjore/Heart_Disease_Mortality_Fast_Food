@@ -27,7 +27,6 @@ library(sf)
 # FFR_shape_merge <- FFR_shape_merge[!(FFR_shape_merge$State %in% c("AK", 'HI', "PR")),]
 FFR_shape_merge <- readRDS(file = './data/FFR_shape_merge.RDS')
 US_states <-FFR_shape_merge %>% aggregate_map(by = "State")
-
 # Tennessee map
 
 # shp <-  FFR_shape_merge %>%
