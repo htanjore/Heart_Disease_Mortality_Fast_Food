@@ -4,10 +4,14 @@ server <- function(input, output) {
   
   output$FFR_tmap = renderLeaflet({
     
-    names(FFR_shape_merge) == input$var
+    data <- FFR_shape
+    var = input$var
+  
+  
+    
     tm_style= input$style
     
-    tm <- tm_shape(FFR_shape_merge, projection = 2163) +
+    tm <- tm_shape(data, projection = 2163) +
       tm_fill(input$var,
               midpoint = 0,
               n=9,
@@ -44,10 +48,9 @@ server <- function(input, output) {
   
   output$FFR_TN = renderLeaflet({
     
-    map_data <- FFR_shape_merge %>% 
-      dplyr::filter(State_name == input$state)
-    names(FFR_shape_merge) == input$var
-    
+    map_data <- FFR_shape %>% 
+      filter(State_name == input$state)
+    var = input$var
   
 tm1 <- tm_shape(map_data, projection = 2163)+
     tm_fill(input$var,
