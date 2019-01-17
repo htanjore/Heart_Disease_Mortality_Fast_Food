@@ -5,10 +5,7 @@ server <- function(input, output) {
   output$FFR_tmap = renderLeaflet({
     
     names(FFR_shape_merge) == input$var
-    
-    
-    mycols <- c("#90e0dc", "#287c28", "#000033","#bebebe")
-   
+    tm_style= input$style
     
     tm <- tm_shape(FFR_shape_merge, projection = 2163) +
       tm_fill(input$var,
@@ -19,15 +16,15 @@ server <- function(input, output) {
               title= input$var,
               border.alpha = .5,
               id = "NAME",
-              textNA = 'Unreliable',
+              textNA = "Unreliable",
               colorNA = "grey",
               popup.vars = input$var)+
       tm_polygons(col = var, alpha = 0.5, border.col = 'white')+
       tm_bubbles(size="Percent_Change_FFR_2009_2014", col = "Percent_Change_FFR_2009_2014",
-                 midpoint = NA,
+                 palette = mycols,
+                  midpoint = NA,
                  title.size="FFR % change 09 to 14",
                  title.col = "FFR % change 09 to 14",
-                 palette = mycols,
                  popup.vars = c("County: " = "NAME", "Heart Disease Age Adjusted Mortality rate: " = "Age_Adjusted_Rate",
                                 "Percent Change in FFR from 09 to 14 per 1000 residents: " = "Percent_Change_FFR_2009_2014",
                                 "Number of FastFood Resturants 09: " = "FFR09",
@@ -38,7 +35,7 @@ server <- function(input, output) {
                 title.size = 1.1,
                 title.position = c("center", "top"),bg.color = "gray95")+
       tm_legend(legend.position = c("right", "bottom"))+
-      tm_style("natural")
+      tm_style(input$style)
     tmap_leaflet(tm)
     
     
@@ -64,7 +61,6 @@ tm1 <- tm_shape(map_data, projection = 2163)+
             textNA = 'Unreliable',
             colorNA = "grey",
             popup.vars = input$var)+
-      
       tm_polygons(col = var, alpha = 0.5, border.col = 'white',title=input$var)+
       tm_bubbles(size ="Percent_Change_FFR_2009_2014", col = "Percent_Change_FFR_2009_2014",
                  palette = mycols,
@@ -82,7 +78,7 @@ tm1 <- tm_shape(map_data, projection = 2163)+
                 title.size = 1.1,
                 title.position = c("center", "top"))+
       tm_legend(legend.position = c("right", "bottom"))+
-      tm_style("natural")
+  tm_style(input$style)
     tmap_leaflet(tm1) 
   })
 }
