@@ -21,10 +21,11 @@ shinyUI(fluidPage(
                     selectInput("var", 
                              label = "Select a variable", 
                              choices = c("Age Adjusted Rate" = 'Age_Adjusted_Rate',
-                                         "Percent Adult diabetes 2013" = "Percent_Adults_Diabetes_2013",
-                                         "Percent Adult Obese  2013" = "Percent_Adults_Obese_2013" ,
-                                         "Recreational facilties % 09 14"="Rec_Facilities_per_1000_09_14",
-                                         "% Population 65 years or older 2010"="PCT_65OLDER10"),
+                                         "Percent Adult diabetes 2013" = "Adults_Diabetes_per_13",
+                                         "Percent Adult Obese  2013" = "Adult_Obese_Per_13"  ,
+                                         "Recreational facilties % 09 14"="Per_Rec_Fac_09-14",
+                                         "Percent 65 Older 2010"="Per_65_Older_10",
+                                         "Povery Rate 2015"="Poverty_rate_15"),
                               selectize = FALSE),
                     selectInput("style", 
                              label = "Select a Style for Background", 
@@ -39,7 +40,7 @@ shinyUI(fluidPage(
         HTML(paste(tags$span(style="color:yellow", "NOTE:"), sep = ""))
       ),
       tags$p(HTML(paste(tags$span(style="color:red", "Click on County:"), sep = "")), "Info about Selected Variable"),
-      tags$p(HTML(paste(tags$span(style="color:red", "Click on Circle:"), sep = "")), "Info Heart Disease Mortality Rate and Fast Food Restaurants")
+      tags$p(HTML(paste(tags$span(style="color:red", "Click on Circle:"), sep = "")), "Info about Heart Disease Mortality Rate and Fast Food Restaurants")
      
       ),
       
@@ -59,4 +60,5 @@ shinyUI(fluidPage(
 )
 )
 )
+
 

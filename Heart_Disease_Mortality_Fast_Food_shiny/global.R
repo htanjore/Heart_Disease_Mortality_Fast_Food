@@ -26,3 +26,5 @@ states <- sort(states$State_name)
 
 
 mycols <- c("#90e0dc", "#287c28", "#000033","#bebebe")
+
+
