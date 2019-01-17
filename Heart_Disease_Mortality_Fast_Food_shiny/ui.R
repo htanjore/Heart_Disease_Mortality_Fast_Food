@@ -9,15 +9,12 @@ shinyUI(fluidPage(
       tags$blockquote("About 610,000 people die of heart disease 
                                                in the United States every year–that's 1 in every 4 deaths"),  
       tags$div(
-         HTML(paste(strong(tags$span(style="color:yellow", "Data Source:" ,tags$br("CDC Wonder,"),
+         HTML(paste(strong(tags$span(style="color:orange", "Data Source:" ,tags$br("CDC Wonder,"),
                                     tags$p("USDA-Food Environment Atlas"), sep = "")
                            )))
       ),
 
-      tags$br(""),
-      tags$br(""),
-    
-                    selectInput("state", 
+                   selectInput("state", 
                             label = "Select a State", 
                             choices = states,
                             selected = 'State_name',selectize = FALSE),
@@ -34,28 +31,25 @@ shinyUI(fluidPage(
                              choices = c("natural","white","cobalt", "albatross",
                                         "watercolor","col_blind","beaver", "bw", 
                                         "classic", "watercolor"),
-                            selectize = FALSE)
-      ),
-        
-                 
-   
-                   #             "watercolor","col_blind","beaver", "bw", "classic", "watercolor",
-                   #              selectize = FALSE)),
-
+                            selectize = FALSE),
       
-          
-      # tags$div(
-      #   HTML(paste(strong(tags$span(style="color:yellow", "Data Source:" ,tags$br("CDC Wonder,"),
-      #                               tags$p("USDA-Food Environment Atlas"), sep = "")
-      #   )))
-      # ),
-         
-      # tags$p("Click on County: Info about Selected Variable"),
-      # tags$br("Click on circle:Info Heart Disease Mortality Rate and Fast Food Restaurants"),
+      tags$br(""),
+      tags$br(""),
+      tags$div(
+        HTML(paste(tags$span(style="color:yellow", "NOTE:"), sep = ""))
+      ),
+      tags$p(HTML(paste(tags$span(style="color:red", "Click on County:"), sep = "")), "Info about Selected Variable"),
+      tags$p(HTML(paste(tags$span(style="color:red", "Click on Circle:"), sep = "")), "Info Heart Disease Mortality Rate and Fast Food Restaurants")
+     
+      ),
+      
+     
+     
+    
+     
   
       mainPanel(
-        tags$head(
-          tags$style(HTML(".main-sidebar { font-size: 14px; }")),width = 2),
+       
               fluidRow(
                leafletOutput("FFR_tmap",width = "125%")),
               fluidRow(
@@ -66,10 +60,3 @@ shinyUI(fluidPage(
 )
 )
 
-
-
-# selectInput("style",
-#             label = "Select a Style",
-#             choices = c("natural","white","cobalt", "albatross",
-#                         "watercolor","col_blind","beaver", "bw", "classic", "watercolor",
-#                         selectize = FALSE)),
