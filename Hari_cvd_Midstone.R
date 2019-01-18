@@ -33,9 +33,9 @@ Gender_based_year <- read.csv('./data/Gender_Age_deaths_only_years_1999_2017.csv
 ggplot(Top_15_deaths, aes(x = reorder(disease, Age_Adjusted_Rate), y = Age_Adjusted_Rate)) +
  geom_bar(stat = 'identity', aes(fill = -Age_Adjusted_Rate), show.legend = FALSE) + coord_flip()+
   xlab('') +
-  ylab('Age Adjusted Rate') +
-  theme(text = element_text(size=15))+
-  ggtitle('Top 15 causes of Death in US') +
+  ylab('') +
+  theme(text = element_text(size=25))+
+  ggtitle('') +
   theme(axis.title.y = element_text(size = 4))
 
 # Cardiovascular deaths by gender: Plot mean value of Gender
