@@ -9,7 +9,7 @@ shinyUI(fluidPage(
       tags$blockquote("About 610,000 people die of heart disease 
                                                in the United States every year–that's 1 in every 4 deaths"),  
       tags$div(
-         HTML(paste(strong(tags$span(style="color:orange", "Data Source:",tags$p("CDC Wonder:"), tags$em("Diseases of Heart, ICD Code (100-109,l11,l13,l20-151)&"),
+         HTML(paste(strong(tags$span(style="color:orange", "Data Source:",tags$p("CDC Wonder:"), tags$em("Diseases of Heart, ICD Code (100-109,l11,l13,l20-151) &"),
                                     tags$br("USDA-Food Environment Atlas"), sep = "")
                            )))
       ),

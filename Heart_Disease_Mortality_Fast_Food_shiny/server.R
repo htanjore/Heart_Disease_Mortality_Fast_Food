@@ -38,7 +38,7 @@ server <- function(input, output) {
       tm_shape(US_states) +
       tm_borders(lwd=2, col = "black", alpha = .25) +
       tm_style(input$style)+
-      tm_layout(title = "Heart Disease Mortality and Fast Food Resturants",
+      tm_layout(title = "",
                 title.size = 1.1,
                 title.position = c("center", "top"),bg.color = "gray95")+
       tm_legend(legend.position = c("right", "bottom"))
@@ -83,7 +83,7 @@ tm1 <- tm_shape(map_data, projection = 2163)+
       tm_shape(US_states) +
       tm_borders(lwd=2, col = "black", alpha = .25) +
       tm_style(input$style)+
-      tm_layout(title = "Heart Disease Mortality and Fast Food Resturants",
+      tm_layout(title = "",
                 title.size = 1.1,
                 title.position = c("center", "top"))+
       tm_legend(legend.position = c("right", "bottom"))
