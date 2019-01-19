@@ -23,17 +23,21 @@ library(sf)
 
 # 
 # FFR <- readRDS(file = './data/FFR.RDS')
+# 
+# FFR <- left_join(FFR, Education, by = "GEOID")
+# saveRDS(FFR, file = "FFR.RDS")
 # county_cvd_2017 <- readRDS(file = './data/county_cvd_2017.RDS')
 # FFR_shape <- st_read("./data/acs_2012_2016_county_us_B27001/acs_2012_2016_county_us_B27001.shp")
 # FFR_shape <- append_data(FFR_shape, county_cvd_2017, key.shp = "GEOID", key.data = "GEOID",ignore.duplicates = TRUE)
 # FFR_shape_merge <- append_data(FFR_shape, FFR, key.shp = "GEOID", key.data = "GEOID",ignore.na = TRUE)
 # FFR_shape_merge <- FFR_shape_merge[!(FFR_shape_merge$State %in% c("AK", 'HI',"DC", "PR")),]
 # 
+# names(FFR_shape_merge)
 # FFR_shape_merge <- FFR_shape_merge %>%
 #   dplyr::select(-un_2012,-unnsrd_,-County_name,-NAME.data, -State.data,-State_name.data, -NAME.data.1) %>%
 #   dplyr::rename("Per_Rec_Fac_09-14" = "PCH_RECFACPTH_09_14", "Adult_Obese_Per_13" = "PCT_OBESE_ADULTS13",
-#          "Adults_Diabetes_per_13" = "PCT_DIABETES_ADULTS13", "Per_65_Older_10"="PCT_65OLDER10")
-# saveRDS(FFR_shape_merge, file = "FFR_shape_merge.RDS")
+#          "Adults_Diabetes_per_13" = "PCT_DIABETES_ADULTS13", "Per_65_Older_10"="PCT_65OLDER10", "Bachelors or Higher_Degree"="Percent_Adults_bachelor's_ degree or higher")
+#saveRDS(FFR_shape_merge, file = "FFR_shape_merge.RDS")
 FFR_shape_merge <- readRDS(file = './data/FFR_shape_merge.RDS')
 US_states <-FFR_shape_merge %>% aggregate_map(by = "State")
 
@@ -41,6 +45,8 @@ var <- "Age_Adjusted_Rate"
 #cuts <- c(75,100, 175,225,300,375,475)
 #cuts <- c(0, 10, 20, 30, 40, 100)
 mycols <- c("#90e0dc", "#287c28", "#000033","#bebebe")
+
+
 
 
 mycols2 <- c("#90e0dc", "#287c28","#bdf8d1","#50c878", "#2f4558","#dcf4f0","#50c8b4")

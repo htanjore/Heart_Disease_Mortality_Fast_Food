@@ -15,7 +15,7 @@ server <- function(input, output) {
       tm_fill(input$var,
               midpoint = 0,
               n=9,
-              palette = "Set1",
+              palette = mycols2,
               border.col = "black",
               title= input$var,
               border.alpha = .5,
@@ -59,7 +59,7 @@ tm1 <- tm_shape(map_data, projection = 2163)+
     tm_fill(input$var,
             midpoint = 0,
             n=9,
-            palette = "Set1",
+            palette = mycols2,
             border.col = "white",
             title=input$var,
             border.alpha = 0.5,
@@ -69,7 +69,7 @@ tm1 <- tm_shape(map_data, projection = 2163)+
             popup.vars = c(input$var, "Percent Change in FFR from 09 to 14 per 1000 residents: " = "Percent_Change_FFR_2009_2014",
                            "Number of FastFood Resturants 09: " = "FFR09",
                            "Number of FastFood Resturants 14: " = "FFR14"))+
-      tm_polygons(col = var, alpha = 0.5, border.col = 'white',title=input$var)+
+      tm_polygons(col = var, alpha = 1, border.col = 'darkgrey',title=input$var)+
       tm_bubbles(size ="Percent_Change_FFR_2009_2014", col = "Percent_Change_FFR_2009_2014",
                  palette = mycols,
                  midpoint = NA,

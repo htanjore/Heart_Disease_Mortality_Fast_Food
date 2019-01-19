@@ -380,3 +380,7 @@ ggplot(corr_age, aes(y=Age.Adjusted.Rate, x=PCT_65OLDER10)) +
 # saveRDS(Gender_based_year, file = 'Gender_based_CrudeDeath_1999_2017.RDS')
 # saveRDS(HD_Race_Deaths_1999_2017, file = 'HD_Race_Deaths_map_1999_2017.RDS')
 # Top_15_deaths <- readRDS(file ='Top_15_deaths.RDS')
+library(RColorBrewer)
+
+brewer.pal(n = 8, name = "Reds")
+

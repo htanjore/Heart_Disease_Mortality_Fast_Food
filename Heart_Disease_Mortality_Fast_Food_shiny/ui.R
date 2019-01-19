@@ -2,7 +2,7 @@
 shinyUI(fluidPage(
   theme = shinytheme("darkly"), 
     fluidRow(
-      column(8, offset = 3,titlePanel("Cardiovascular disease Mortality and Fast Food Restaurants Density in US"))),
+      column(8, offset = 3,titlePanel("Cardiovascular disease Mortality and Fast Food Restaurants Density in the US"))),
   
     sidebarLayout(
       sidebarPanel(width = 3,
@@ -32,29 +32,30 @@ shinyUI(fluidPage(
                                          "Obesity Percent in Persons age 20 and above" = "Adult_Obese_Per_13"  ,
                                          "Percentage change in Recreational facilties 09 to 14"="Per_Rec_Fac_09-14",
                                          "Percentage of County Population 65 year old or older"="Per_65_Older_10",
-                                         "Percentage of County Households with below poverty Threshold "="Poverty_rate_15"),
+                                         "Percentage of County Households with below poverty Threshold "="Poverty_rate_15",
+                                         "Percentage of Adults with Higschool or higher degree"= "Bachelors or Higher_Degree"),
                               selectize = FALSE),
+                     selectInput("style", 
+                             label = "Background Style for Map", 
+                             choices = c("natural","white","cobalt", "albatross",
+                              "watercolor","col_blind","beaver", "bw", 
+                              "classic"),
+                            selectize = FALSE),
+      
+      
                     
       tags$hr(""),
       tags$div(
-        HTML(paste(tags$span(style="color:yellow", "NOTE:"), sep = ""))
+        HTML(paste(tags$span(style="color:red", "NOTE:"), sep = ""))
       ),
-      tags$p(HTML(paste(tags$span(style="color:white", "Cardiovascular disease mortality rate is age adjusted rate for the year 2017 per 100,000. 
-                                  Obesity and Diabetes are Age adjusted Percentage rates for the year 2013"), sep = ""))),
-      tags$p(HTML(paste(tags$span(style="color:red", "Click on County:"), sep = "")), "Info about Selected Variable and Fast Food Restaurants"),
-      tags$p(HTML(paste(tags$span(style="color:red", "Click on Circle:"), sep = "")), "Info about Heart Disease Mortality Rate and Fast Food Restaurants"),
+      tags$p(HTML(paste(tags$span(style="color:yellow", "Cardiovascular disease mortality rate is age adjusted rate for the year 2017 per 100,000. 
+                                  Obesity and Diabetes are Age adjusted Percentage rates for the year 2013."), sep = ""))),
+      tags$p(HTML(paste(tags$span(style="color:red", "Click on County:"), sep = "")), "Info about Selected Variable and Fast Food Restaurants(FFR)."),
+      tags$p(HTML(paste(tags$span(style="color:red", "Click on Circle:"), sep = "")), "Info about Heart Disease Mortality Rate and Fast Food Restaurants."),
       tags$i(HTML(paste(tags$span(style="color:lightgrey", "Hari Tanjore"), sep = "")),
-             tags$br("")),
-                selectInput("style", 
-                         label = "Background Style for Map", 
-                         choices = c("natural","white","cobalt", "albatross",
-                              "watercolor","col_blind","beaver", "bw", 
-                              "classic", "watercolor"),
-                         selectize = FALSE)
-      ),
-     
-     
-     mainPanel(
+             tags$br(""))),
+                
+       mainPanel(
        
               fluidRow(
                leafletOutput("FFR_tmap",width = "110%", height=400)),
