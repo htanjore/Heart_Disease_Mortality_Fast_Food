@@ -27,12 +27,12 @@ shinyUI(fluidPage(
                             selected = 'Tennessee',selectize = FALSE),
                     selectInput("var", 
                              label = "Select a variable", 
-                             choices = c("Cardiovascular Disease Mortality Rate" = 'Age_Adjusted_Rate',
-                                         "Diabetes Percent in Persons age 20 and above" = "Adults_Diabetes_per_13",
-                                         "Obesity Percent in Persons age 20 and above" = "Adult_Obese_Per_13"  ,
-                                         "Percentage change in Recreational facilties 09 to 14"="Per_Rec_Fac_09-14",
-                                         "Percentage of County Population 65 year old or older"="Per_65_Older_10",
-                                         "Percentage of County Households with below poverty Threshold "="Poverty_rate_15",
+                             choices = c("Cardiovascular Disease Mortality Rate" = "Age Adjusted Rate",
+                                         "Diabetes Percent in Persons age 20 and above" = "Adults Diabetes Percent",
+                                         "Obesity Percent in Persons age 20 and above" = "Adult Obese Percent"   ,
+                                         "Percentage change in Recreational facilties 09 to 14"="Percent Rec Facilities 09 to 14",
+                                         "Percentage of County Population 65 year old or older"="Percent 65 or Older",
+                                         "Percentage of County Households with below poverty Threshold "="Poverty rate",
                                          "Percentage of Adults with Higschool or higher degree"= "Bachelors or Higher_Degree"),
                               selectize = FALSE),
                      selectInput("style", 
@@ -68,7 +68,7 @@ shinyUI(fluidPage(
 )
 
 
-
+names(FFR_shape)
 
 
 

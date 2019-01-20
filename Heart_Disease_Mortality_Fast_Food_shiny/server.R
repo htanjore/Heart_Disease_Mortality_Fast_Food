@@ -22,17 +22,18 @@ server <- function(input, output) {
               id = "NAME",
               textNA = "Unreliable",
               colorNA = "grey",
-              popup.vars = c(input$var, "Percent Change in FFR from 09 to 14 per 1000 residents: " = "Percent_Change_FFR_2009_2014",
-                                "Number of FastFood Resturants 09: " = "FFR09",
-                                "Number of FastFood Resturants 14: " = "FFR14"))+
+              popup.vars = c("Age Adjusted Mortality rate: " = "Age Adjusted Rate",
+                             "Percent Change in FFR from 09 to 14 per 1000 residents: " = "FFR percent change 09 to 14",
+                             "Number of FastFood Resturants 09: " = "FFR09",
+                             "Number of FastFood Resturants 14: " = "FFR14"))+
       tm_polygons(col = var, alpha = 0.5, border.col = 'white')+
-      tm_bubbles(size="Percent_Change_FFR_2009_2014", col = "Percent_Change_FFR_2009_2014",
+      tm_bubbles(size="FFR percent change 09 to 14", col = "FFR percent change 09 to 14",
+                 midpoint = NA,
+                 title.size="FFR percent change 09 to 14",
+                 title.col = "FFR percent change 09 to 14",
                  palette = mycols,
-                  midpoint = NA,
-                 title.size="FFR % change 09 to 14",
-                 title.col = "FFR % change 09 to 14",
-                 popup.vars = c("County: " = "NAME", "Heart Disease Age Adjusted Mortality rate: " = "Age_Adjusted_Rate",
-                                "Percent Change in FFR from 09 to 14 per 1000 residents: " = "Percent_Change_FFR_2009_2014",
+                 popup.vars = c("County: " = "NAME", "Age Adjusted Mortality rate: " = "Age Adjusted Rate",
+                                "Percent Change in FFR from 09 to 14 per 1000 residents: " = "FFR percent change 09 to 14",
                                 "Number of FastFood Resturants 09: " = "FFR09",
                                 "Number of FastFood Resturants 14: " = "FFR14"))+
       tm_shape(US_states) +
@@ -66,19 +67,20 @@ tm1 <- tm_shape(map_data, projection = 2163)+
             id = "NAME",
             textNA = 'Unreliable',
             colorNA = "grey",
-            popup.vars = c(input$var, "Percent Change in FFR from 09 to 14 per 1000 residents: " = "Percent_Change_FFR_2009_2014",
+            popup.vars = c("County: " = "NAME", "Age Adjusted Mortality rate: " = "Age Adjusted Rate",
+                           "Percent Change in FFR from 09 to 14 per 1000 residents: " = "FFR percent change 09 to 14",
                            "Number of FastFood Resturants 09: " = "FFR09",
                            "Number of FastFood Resturants 14: " = "FFR14"))+
       tm_polygons(col = var, alpha = 1, border.col = 'darkgrey',title=input$var)+
-      tm_bubbles(size ="Percent_Change_FFR_2009_2014", col = "Percent_Change_FFR_2009_2014",
-                 palette = mycols,
-                 midpoint = NA,
-                 title.size=input$var,
-                 title.col = "FFR % change 09 to 14",
-                 popup.vars = c("County: " = "NAME", "Heart Disease Age Adjusted Mortality rate: " = "Age_Adjusted_Rate",
-                                              "Percent Change in FFR from 09 to 14 per 1000 residents: " = "Percent_Change_FFR_2009_2014",
-                                              "Number of FastFood Resturants 09: " = "FFR09",
-                                              "Number of FastFood Resturants 14: " = "FFR14"))+
+      tm_bubbles(size="FFR percent change 09 to 14", col = "FFR percent change 09 to 14",
+             midpoint = NA,
+             title.size="FFR percent change 09 to 14",
+             title.col = "FFR percent change 09 to 14",
+             palette = mycols,
+             popup.vars = c("County: " = "NAME", "Age Adjusted Mortality rate: " = "Age Adjusted Rate",
+                            "Percent Change in FFR from 09 to 14 per 1000 residents: " = "FFR percent change 09 to 14",
+                            "Number of FastFood Resturants 09: " = "FFR09",
+                            "Number of FastFood Resturants 14: " = "FFR14"))+
       tmap_options(max.categories = 14)+
       tm_shape(US_states) +
       tm_borders(lwd=2, col = "black", alpha = .25) +
