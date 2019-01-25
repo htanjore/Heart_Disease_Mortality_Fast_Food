@@ -97,7 +97,7 @@ tn <- FFR_shape_merge %>% filter(State == 'TN')
 var <- "Age Adjusted Rate"
 #cuts1 <- c(100,120,180,200,300,350,400,450)
 tm1 <- tm_shape(tn, projection = 2163) +
-  tm_fill(var,
+    tm_fill(var,
           midpoint = 0,
           n=9,
           palette = "Set1",
@@ -112,10 +112,8 @@ tm1 <- tm_shape(tn, projection = 2163) +
                              "Percent Change in FFR from 09 to 14 per 1000 residents: " = "FFR percent change 09 to 14",
                              "Number of FastFood Resturants 09: " = "FFR09",
                              "Number of FastFood Resturants 14: " = "FFR14"))+
-  
   tm_polygons(col = var, alpha = 0.5, border.col = 'white')+
   tm_text("County", size = 0.8, xmod = .5, ymod = .5)+
- 
   tm_bubbles(size="FFR percent change 09 to 14", col = "FFR percent change 09 to 14",
              midpoint = NA,
              title.size="FFR percent change 09 to 14",
@@ -134,8 +132,6 @@ tm1 <- tm_shape(tn, projection = 2163) +
             title.size = 1.1,
             title.position = c("center", "top"))+
   tm_legend(legend.position = c("right", "bottom"))+
-
-  
 tmap_leaflet(tm1)
 
 
