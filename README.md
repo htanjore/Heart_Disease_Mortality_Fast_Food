@@ -1,4 +1,5 @@
 
+
 # Midstone project to build a Shiny App. 
 
 ## Analysis of Association of Cardiovascular Disease Mortality and Fast Food Restaurant Density
@@ -27,4 +28,5 @@ Is there an association between the density of fast food restaurants and  cardio
 
 ##Data Sources:
 CDC (Center for Disease Control), National Cardiovascular Disease Surveillance/HealthData.gov, USDA (United States Department of Agriculture)- Food Environment Atlas. 
+
 

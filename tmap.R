@@ -129,6 +129,6 @@ tm1 <- tm_shape(tn, projection = 2163) +
             title.position = c("center", "top"))+
   tm_legend(legend.position = c("right", "bottom"))
   
-tmap_leaflet(tm1) 
+tmap_leaflet(tm1)
 
 
