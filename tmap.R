@@ -38,7 +38,9 @@ library(sf)
 # 
 # saveRDS(FFR_shape_merge, file = "FFR_shape_merge.RDS")
 FFR_shape_merge <- readRDS(file = './data/FFR_shape_merge.RDS')
+
 US_states <-FFR_shape_merge %>% aggregate_map(by = "State")
+
 
 var <- "Age Adjusted Rate"
 #cuts <- c(75,100, 175,225,300,375,475)
@@ -50,7 +52,6 @@ mycols <- c("#90e0dc", "#287c28", "#000033","#bebebe")
 
 mycols2 <- c("#90e0dc", "#287c28","#bdf8d1","#50c878", "#2f4558","#dcf4f0","#50c8b4")
   #cuts <- c(0.1, 0.3, 0.5, 1,3,4,6)
-  names(FFR_shape_merge)
 tm <- tm_shape(FFR_shape_merge, projection = 2163) +
     tm_fill(var,
               midpoint = 0,
@@ -131,7 +132,7 @@ tm1 <- tm_shape(tn, projection = 2163) +
   tm_layout(title = "Heart Disease Mortality and Fast Food Resturants",
             title.size = 1.1,
             title.position = c("center", "top"))+
-  tm_legend(legend.position = c("right", "bottom"))+
-tmap_leaflet(tm1)
+  tm_legend(legend.position = c("right", "bottom"))
+tmap_leaflet(tm1) %>% 
 
 
