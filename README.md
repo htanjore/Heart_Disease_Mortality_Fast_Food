@@ -23,6 +23,3 @@ Cardiovascular diseases remains the top chronic diseases resulting in increased 
 CDC (Center for Disease Control), National Cardiovascular Disease Surveillance/HealthData.gov, USDA (United States Department of Agriculture)- Food Environment Atlas. 
 
 The link to the app : https://haritanjore.shinyapps.io/Heart_Disease_Mortality_Fast_Food_shiny/
-
-![alt text](Heart_Disease_Mortality_Fast_Food
-/Screen_Shiny.png "Screen")
