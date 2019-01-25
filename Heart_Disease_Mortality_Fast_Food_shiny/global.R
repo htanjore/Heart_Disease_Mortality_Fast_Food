@@ -13,6 +13,8 @@ library(dplyr)
 library(shinycustomloader)
 library(shinycssloaders)
 
+
+
 FFR_shape <- readRDS(file = './data/FFR_shape_merge.RDS')
 US_states <-FFR_shape %>% aggregate_map(by = "State")
 

@@ -33,7 +33,8 @@ library(sf)
 #   dplyr::rename("Percent Rec Facilities 09 to 14" = "PCH_RECFACPTH_09_14", "Age Adjusted Rate"= 'Age_Adjusted_Rate',
 #                 "Adult Obese Percent" = "PCT_OBESE_ADULTS13", "FFR percent change 09 to 14" ="Percent_Change_FFR_2009_2014",
 #          "Adult Diabetes Percent" = "PCT_DIABETES_ADULTS13", "Percent 65 or Older"="PCT_65OLDER10",
-#          "Bachelors or Higher Degree"="Percent_Adults_bachelor's_ degree or higher", "Poverty rate" ="Poverty_rate_15")
+#          "Bachelors or Higher Degree"="Percent_Adults_bachelor's_ degree or higher",
+#          "Poverty rate" ="Poverty_rate_15")
 # 
 # saveRDS(FFR_shape_merge, file = "FFR_shape_merge.RDS")
 FFR_shape_merge <- readRDS(file = './data/FFR_shape_merge.RDS')
@@ -61,6 +62,7 @@ tm <- tm_shape(FFR_shape_merge, projection = 2163) +
               id = "NAME",
               textNA = 'Unreliable',
               colorNA = "grey",
+            alpha= 1,
             popup.vars = c("Age Adjusted Mortality rate: " = "Age Adjusted Rate",
                "Percent Change in FFR from 09 to 14 per 1000 residents: " = "FFR percent change 09 to 14",
                "Number of FastFood Resturants 09: " = "FFR09",
@@ -73,6 +75,7 @@ tm <- tm_shape(FFR_shape_merge, projection = 2163) +
              title.size="FFR percent change 09 to 14",
              title.col = "FFR percent change 09 to 14",
              palette = mycols,
+             alpha = 0.5,
              popup.vars = c("County: " = "NAME", "Age Adjusted Mortality rate: " = "Age Adjusted Rate",
                             "Percent Change in FFR from 09 to 14 per 1000 residents: " = "FFR percent change 09 to 14",
                             "Number of FastFood Resturants 09: " = "FFR09",
@@ -104,18 +107,21 @@ tm1 <- tm_shape(tn, projection = 2163) +
           id = "NAME",
           textNA = 'Unreliable',
           colorNA = "grey",
+          alpha= .9,
           popup.vars = c("County: " = "NAME", "Age Adjusted Mortality rate: " = "Age Adjusted Rate",
                              "Percent Change in FFR from 09 to 14 per 1000 residents: " = "FFR percent change 09 to 14",
                              "Number of FastFood Resturants 09: " = "FFR09",
                              "Number of FastFood Resturants 14: " = "FFR14"))+
   
   tm_polygons(col = var, alpha = 0.5, border.col = 'white')+
+  tm_text("County", size = 0.8, xmod = .5, ymod = .5)+
  
   tm_bubbles(size="FFR percent change 09 to 14", col = "FFR percent change 09 to 14",
              midpoint = NA,
              title.size="FFR percent change 09 to 14",
              title.col = "FFR percent change 09 to 14",
              palette = mycols,
+             alpha = 0.5,
              popup.vars = c("County: " = "NAME", "Age Adjusted Mortality rate: " = "Age Adjusted Rate",
                             "Percent Change in FFR from 09 to 14 per 1000 residents: " = "FFR percent change 09 to 14",
                             "Number of FastFood Resturants 09: " = "FFR09",
@@ -127,7 +133,8 @@ tm1 <- tm_shape(tn, projection = 2163) +
   tm_layout(title = "Heart Disease Mortality and Fast Food Resturants",
             title.size = 1.1,
             title.position = c("center", "top"))+
-  tm_legend(legend.position = c("right", "bottom"))
+  tm_legend(legend.position = c("right", "bottom"))+
+
   
 tmap_leaflet(tm1)
 

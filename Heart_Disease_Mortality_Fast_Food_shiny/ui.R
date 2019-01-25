@@ -1,6 +1,6 @@
 
 shinyUI(fluidPage(
-  theme = shinytheme("darkly"), 
+   theme = shinytheme("darkly"), 
     fluidRow(
       column(8, offset = 3,titlePanel("Cardiovascular disease Mortality and Fast Food Restaurants Density in the US"))),
   
@@ -30,14 +30,7 @@ shinyUI(fluidPage(
                                          "Percentage of County Households with below poverty Threshold "="Poverty rate",
                                          "Percentage of Adults with Higschool or higher degree"= "Bachelors or Higher Degree"),
                               selectize = FALSE),
-                     selectInput("style", 
-                             label = "Background Style for Map", 
-                             choices = c("natural","white","cobalt", "albatross",
-                              "watercolor","col_blind","beaver", "bw", 
-                              "classic"),
-                            selectize = FALSE),
-      
-      
+                  
                     
       tags$hr(""),
       tags$div(
@@ -51,23 +44,21 @@ shinyUI(fluidPage(
              tags$br(""))),
                 
        mainPanel(
-       
-              fluidRow(
-               withSpinner(type = 6,leafletOutput("FFR_tmap", width = "110%", height=400))),
-              fluidRow(
-                withSpinner(type = 6, leafletOutput("FFR_TN", width = "110%", height=455)))
+         tabsetPanel(
+           tabPanel(
+             "US Counties Information", leafletOutput("FFR_TN",width = "110%", height=900)),
+           tabPanel(
+             "Overview in The US", withSpinner(type = 6, leafletOutput("FFR_tmap",width = "110%", height=900)))
+          
     
       )
 )
 )
 )
+)
 
 
 
-
-names(FFR_shape
-      
-      )
 
 
 
