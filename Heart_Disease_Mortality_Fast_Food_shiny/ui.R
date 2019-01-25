@@ -6,12 +6,7 @@ shinyUI(fluidPage(
   
     sidebarLayout(
       sidebarPanel(width = 3,
-      # tags$blockquote(div(style = "height:20px; font-size:14px;","About 610,000 people die of heart disease 
-      #                                          in the United States every year–that's 1 in every 4 deaths", tags$p("CDC Wonder: ","Diseases of Heart"),
-      #                     tags$p("Diseases of Heart, ICD Code (100-109,l11,l13,l20-151) &"),
-      #                     tags$p("Fast Food Restaurant data from USDA-Food Environment Atlas"))),
-                          
-      tags$div(
+          tags$div(
          HTML(paste(tags$span(style="font-size:16px;color:lightgrey", "World wide, around 17.9 million people die every year 
                       due to cardiovascular disease. In the United States, 610,000 people die of heart disease every year–that's 
                               1 in every 4 deaths. It affects both men and women. Risk Factors for Cardiovascular Disease include Diabetes,",
@@ -28,12 +23,12 @@ shinyUI(fluidPage(
                     selectInput("var", 
                              label = "Select a variable", 
                              choices = c("Cardiovascular Disease Mortality Rate" = "Age Adjusted Rate",
-                                         "Diabetes Percent in Persons age 20 and above" = "Adults Diabetes Percent",
+                                         "Diabetes Percent in Persons age 20 and above" = "Adult Diabetes Percent",
                                          "Obesity Percent in Persons age 20 and above" = "Adult Obese Percent"   ,
                                          "Percentage change in Recreational facilties 09 to 14"="Percent Rec Facilities 09 to 14",
                                          "Percentage of County Population 65 year old or older"="Percent 65 or Older",
                                          "Percentage of County Households with below poverty Threshold "="Poverty rate",
-                                         "Percentage of Adults with Higschool or higher degree"= "Bachelors or Higher_Degree"),
+                                         "Percentage of Adults with Higschool or higher degree"= "Bachelors or Higher Degree"),
                               selectize = FALSE),
                      selectInput("style", 
                              label = "Background Style for Map", 
@@ -58,9 +53,9 @@ shinyUI(fluidPage(
        mainPanel(
        
               fluidRow(
-               leafletOutput("FFR_tmap",width = "110%", height=400)),
+               withSpinner(type = 6,leafletOutput("FFR_tmap", width = "110%", height=400))),
               fluidRow(
-                leafletOutput("FFR_TN", width = "110%", height=455))
+                withSpinner(type = 6, leafletOutput("FFR_TN", width = "110%", height=455)))
     
       )
 )
@@ -68,8 +63,11 @@ shinyUI(fluidPage(
 )
 
 
-names(FFR_shape)
 
+
+names(FFR_shape
+      
+      )
 
 
 

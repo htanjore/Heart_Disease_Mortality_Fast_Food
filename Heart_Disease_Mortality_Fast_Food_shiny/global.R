@@ -10,6 +10,8 @@ library(leaflet)
 library(sf)
 library(magrittr)
 library(dplyr)
+library(shinycustomloader)
+library(shinycssloaders)
 
 FFR_shape <- readRDS(file = './data/FFR_shape_merge.RDS')
 US_states <-FFR_shape %>% aggregate_map(by = "State")
@@ -27,6 +29,5 @@ states <- sort(states$State_name)
 
 mycols <- c("#90e0dc", "#287c28", "#000033","#bebebe")
 mycols2 <- c("#F781BF","#E41A1C", "#377EB8" ,"#4DAF4A", "#984EA3", "#FF7F00" ,"#FFFF33", "#A65628","#CB181D")
-
 
 

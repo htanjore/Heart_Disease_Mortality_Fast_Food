@@ -30,9 +30,9 @@ library(sf)
 # FFR_shape_merge <- FFR_shape_merge[!(FFR_shape_merge$State %in% c("AK", 'HI',"DC", "PR")),]
 # FFR_shape_merge <- FFR_shape_merge %>%
 #   dplyr::select(-un_2012,-unnsrd_,-County_name,-NAME.data, -State.data,-State_name.data, -NAME.data.1) %>%
-#   dplyr::rename("Percent Rec Facilities 09 to 14" = "PCH_RECFACPTH_09_14", "Age Adjusted Rate"= 'Age_Adjusted_Rate', 
+#   dplyr::rename("Percent Rec Facilities 09 to 14" = "PCH_RECFACPTH_09_14", "Age Adjusted Rate"= 'Age_Adjusted_Rate',
 #                 "Adult Obese Percent" = "PCT_OBESE_ADULTS13", "FFR percent change 09 to 14" ="Percent_Change_FFR_2009_2014",
-#          "Adults Diabetes Percent" = "PCT_DIABETES_ADULTS13", "Percent 65 or Older"="PCT_65OLDER10",
+#          "Adult Diabetes Percent" = "PCT_DIABETES_ADULTS13", "Percent 65 or Older"="PCT_65OLDER10",
 #          "Bachelors or Higher Degree"="Percent_Adults_bachelor's_ degree or higher", "Poverty rate" ="Poverty_rate_15")
 # 
 # saveRDS(FFR_shape_merge, file = "FFR_shape_merge.RDS")

@@ -22,7 +22,7 @@ server <- function(input, output) {
               id = "NAME",
               textNA = "Unreliable",
               colorNA = "grey",
-              popup.vars = c("Age Adjusted Mortality rate: " = "Age Adjusted Rate",
+              popup.vars = c(input$var,"Age Adjusted Mortality rate: " = "Age Adjusted Rate",
                              "Percent Change in FFR from 09 to 14 per 1000 residents: " = "FFR percent change 09 to 14",
                              "Number of FastFood Resturants 09: " = "FFR09",
                              "Number of FastFood Resturants 14: " = "FFR14"))+
@@ -67,7 +67,7 @@ tm1 <- tm_shape(map_data, projection = 2163)+
             id = "NAME",
             textNA = 'Unreliable',
             colorNA = "grey",
-            popup.vars = c("County: " = "NAME", "Age Adjusted Mortality rate: " = "Age Adjusted Rate",
+            popup.vars = c(input$var,"Age Adjusted Mortality rate: " = "Age Adjusted Rate",
                            "Percent Change in FFR from 09 to 14 per 1000 residents: " = "FFR percent change 09 to 14",
                            "Number of FastFood Resturants 09: " = "FFR09",
                            "Number of FastFood Resturants 14: " = "FFR14"))+
@@ -90,7 +90,8 @@ tm1 <- tm_shape(map_data, projection = 2163)+
                 title.position = c("center", "top"))+
       tm_legend(legend.position = c("right", "bottom"))
  
-    tmap_leaflet(tm1) 
+    tmap_leaflet(tm1)
+      
   })
 }
 
