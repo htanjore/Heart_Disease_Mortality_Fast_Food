@@ -26,4 +26,4 @@ The link to the app : [ShinyApp](https://haritanjore.shinyapps.io/Heart_Disease_
 
 
 ![ScreenShot](./images/Screen_shot.png)
-![ScreenShot](./images/Screen_shot_us.png)
+![ScreenShot](./images/Screen_shot_US.png)
