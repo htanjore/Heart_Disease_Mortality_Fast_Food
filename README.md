@@ -15,8 +15,8 @@ Cardiovascular diseases remains the top chronic diseases resulting in increased 
 
 
 ## Data Question:
-** 1.How are the mortality rate and prevalence of cardiovascular disease changed over time? ** <br/>
-** 2.Is there an association between the density of fast food restaurants and  cardiovascular disease deaths, diabetes prevalence, Obesity, and socioeconomic factors. **  
+ 1.How are the mortality rate and prevalence of cardiovascular disease changed over time? ** <br/>
+ 2. Is there an association between the density of fast food restaurants and  cardiovascular disease deaths, diabetes prevalence, Obesity, and socioeconomic factors.
 
 
 ## Data Sources:
