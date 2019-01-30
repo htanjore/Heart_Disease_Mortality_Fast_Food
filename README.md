@@ -25,5 +25,5 @@ CDC (Center for Disease Control), National Cardiovascular Disease Surveillance/H
 The link to the app : [ShinyApp](https://haritanjore.shinyapps.io/Heart_Disease_Mortality_Fast_Food_shiny/)
 
 
-![ScreenShot](images/Screen_shot.png)
-![ScreenShot](images/Screen_shot_US.png?raw=true)
+![ScreenShot](images/Screen_shot.png 'TN map')
+![ScreenShot](images/Screen_shot_US.png 'US map')
