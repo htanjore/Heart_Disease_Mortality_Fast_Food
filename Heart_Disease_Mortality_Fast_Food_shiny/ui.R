@@ -58,7 +58,7 @@ shinyUI(fluidPage(
 )
 
 
-
+names(FFR_shape)
 
 
 

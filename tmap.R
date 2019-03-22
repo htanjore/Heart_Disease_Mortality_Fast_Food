@@ -24,17 +24,24 @@ library(sf)
 
 # FFR <- readRDS(file = './data/FFR.RDS')
 # county_cvd_2017 <- readRDS(file = './data/county_cvd_2017.RDS')
+# #county_cvd_2017 <- FFR[!(FFR$State %in% c("AK", 'HI',"DC", "PR")),]
 # FFR_shape <- st_read("./data/acs_2012_2016_county_us_B27001/acs_2012_2016_county_us_B27001.shp")
+# 
+# shpsimp <- simplify_shape(FFR_shape, fact = 0.05)
+# 
 # FFR_shape <- append_data(FFR_shape, county_cvd_2017, key.shp = "GEOID", key.data = "GEOID",ignore.duplicates = TRUE)
 # FFR_shape_merge <- append_data(FFR_shape, FFR, key.shp = "GEOID", key.data = "GEOID",ignore.na = TRUE)
-# FFR_shape_merge <- FFR_shape_merge[!(FFR_shape_merge$State %in% c("AK", 'HI',"DC", "PR")),]
+# FFR_shape_merge <- FFR_shape_merge[!(FFR_shape_merge$State_name %in% c("Alaska", 'District of Columbia',"Hawaii")),]
 # FFR_shape_merge <- FFR_shape_merge %>%
 #   dplyr::select(-un_2012,-unnsrd_,-County_name,-NAME.data, -State.data,-State_name.data, -NAME.data.1) %>%
 #   dplyr::rename("Percent Rec Facilities 09 to 14" = "PCH_RECFACPTH_09_14", "Age Adjusted Rate"= 'Age_Adjusted_Rate',
 #                 "Adult Obese Percent" = "PCT_OBESE_ADULTS13", "FFR percent change 09 to 14" ="Percent_Change_FFR_2009_2014",
 #          "Adult Diabetes Percent" = "PCT_DIABETES_ADULTS13", "Percent 65 or Older"="PCT_65OLDER10",
 #          "Bachelors or Higher Degree"="Percent_Adults_bachelor's_ degree or higher",
-#          "Poverty rate" ="Poverty_rate_15")
+#          "Percent African American Residents" ="PCT_NHBLACK10",
+#          "Percent White Residents" ="PCT_NHWHITE10","Poverty rate" ="Poverty_rate_15")
+# FFR_shape_merge <- FFR_shape_merge[!grepl('Alaska', FFR_shape_merge$NAME),]
+# FFR_shape_merge <- FFR_shape_merge[!grepl('Hawaii', FFR_shape_merge$NAME),]
 # 
 # saveRDS(FFR_shape_merge, file = "FFR_shape_merge.RDS")
 FFR_shape_merge <- readRDS(file = './data/FFR_shape_merge.RDS')
@@ -133,6 +140,6 @@ tm1 <- tm_shape(tn, projection = 2163) +
             title.size = 1.1,
             title.position = c("center", "top"))+
   tm_legend(legend.position = c("right", "bottom"))
-tmap_leaflet(tm1) %>% 
+tmap_leaflet(tm1) 
 
 
